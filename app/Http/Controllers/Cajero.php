@@ -9,10 +9,6 @@ use App\Http\Controllers\Controller;
 
 class Cajero extends Controller
 {
-    public function index()
-    {
-        //
-    }
     public function retiro(Request $request)
     {
       $retiro=$request->retiro;
@@ -30,9 +26,5 @@ class Cajero extends Controller
         }
       }
       return view('retiro', ['billetes'=>$billetero]) ;
-    }
-    public function show($id)
-    {
-        //
     }
 }

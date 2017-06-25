@@ -15,3 +15,7 @@ Route::get('/cajero', function () {
   return view('cajero') ;
 });
 Route::post('retiro', 'Cajero@retiro');
+Route::get('/intervalo', function () {
+  return view('intervalo') ;
+});
+Route::post('ordenamiento', 'Intervalo@intervalo');
